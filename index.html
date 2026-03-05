@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just HR Login page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <div class="form-container">
+
+        <div class="brand">
+            <div class="brand-icon" aria-hidden="true">
+                <img src="Assets/Just HR.png" alt="Just HR">
+            </div>
+            <div class="brand-name">
+                <div class="side-logo">
+                    <img src="Assets/flag.png" alt="flag">
+                </div>
+                <h2>JUST HR</h2>
+            </div>
+            <p class="brand-subtitle">Workforce Manager</p>
+            <div class="secure-badge">
+                <img src="Assets/padlock-green.png" alt="padlock">
+                SECURE PORTAL
+            </div>
+        </div>
+
+        <p class="auth-notice">Authorized access only. Please enter your credentials below.</p>
+
+        <form class="form-box">
+            <div class="input-group">
+                <label for="identification">Email or Employee ID</label>
+                <div class="input-wrapper">
+                    <span class="input-icon" aria-hidden="true">
+                        <img src="Assets/people.png" alt="user">
+                    </span>
+                    <input id="identification" type="text" class="input-field" placeholder="e.g. john.doe@company.com">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div class="label-row">
+                    <label for="password">Password</label>
+                    <a href="#" class="forgot-link">Forgot Password?</a>
+                </div>
+                <div class="input-wrapper">
+                    <span class="input-icon" aria-hidden="true">
+                        <img src="Assets/padlock.png" alt="password">
+                    </span>
+                    <input id="password" type="password" class="input-field" placeholder="••••••••••">
+                    <button type="button" class="eye-toggle" id="eyeBtn" aria-label="Toggle password visibility" onclick="togglePassword()">
+                        <img src="Assets/view.png" alt="view">
+                    </button>
+                </div>
+            </div>
+
+            <div class="remember-row">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember this device</label>
+            </div>
+        </form>
+
+        <button type="submit" class="btn-signin">
+            Sign In
+        </button>
+
+        <div class="card-footer">
+            <div class="footer-item">
+                <div class="icon">
+                    <img src="Assets/insurance.png" alt="">
+                </div>
+                256-bit Encryption
+            </div>
+            <a href="#" class="footer-link">Contact Support</a>
+        </div>
+    </div>
+</body>
+</html>
